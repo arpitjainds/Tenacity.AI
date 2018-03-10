@@ -6,8 +6,6 @@ Requires Node.js , Bower, CloudFoundry CLI, IBM Cloud Account.
 
 >- Arpit Jain<BR>
 >- Gautam Yadav<BR>
->- Harsh Agarwal<BR>
->- Bhupendra Singh<BR>
 
 ### TO USE
   
@@ -18,3 +16,7 @@ Requires Node.js , Bower, CloudFoundry CLI, IBM Cloud Account.
 >- Open 2 parallel windows of the terminal: In the first one run the node js application, $ npm start In the second one upload the videos either from the local server or online link, $ bin/processMedia -S -f public/media_files/grid-breakers.mp4 or $ bin/processMedia -S -f http://someurl.com/somefilename.mp4<BR>
 
 >- Open http://localhost:6007/ or http://multimediaanalyser.eu-gb.mybluemix.net/ and enter the following, username: gautam password: gautams<BR><BR>
+
+### VIEW DEMO VIDEO<br>
+
+![Demo](main.jpeg)
