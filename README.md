@@ -1,5 +1,3 @@
-# Tenacity.AI
-
 [![](main.jpg)](https://vimeo.com/259363004)
 
 CLick on the Picture for the video.
