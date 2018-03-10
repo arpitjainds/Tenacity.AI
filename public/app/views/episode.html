@@ -1,0 +1,98 @@
+<style>
+    .demo-md-panel {
+        min-height: 500px;
+    }
+
+    .demo-dialog-example {
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);
+        width: 500px;
+    }
+
+    .demo-dialog-content {
+        padding: 0 15px;
+        height: 600px;
+        width: 100%;
+    }
+
+
+    .demo-dialog-button {
+        width: 100%;
+    }
+
+    .demo-menu-example {
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);
+        width: 256px;
+    }
+
+    .demo-menu-item {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 48px;
+        padding: 0 16px;
+        position: relative;
+        transition: background 0.15s linear;
+        width: auto;
+    }
+
+    .demo-menu-item:hover,
+    .demo-menu-item:focus {
+        background-color: rgb(238, 238, 238);
+    }
+
+    .demo-menu-item.selected {
+        color: rgb(0, 0, 0);
+    }
+</style>
+
+
+<div role="dialog" layout="column" layout-align="center center">
+    <md-toolbar>
+        <div class="md-toolbar-tools" style="background: linear-gradient(to right, #8fcfe5 , #149dcc);">
+            <h2> {{ctrl.episode.title}}</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="ctrl.closeDialog()">
+                <md-icon md-font-icon="design-icon-close_cancel_error_32" ng-style="{color: linear-gradient(to right, #8fcfe5 , #149dcc), 'font-size':'24px', height: '24px'}"
+                    aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <div class="demo-dialog-content">
+        <md-tabs md-border-bottom layout-fill>
+            <md-tab label="Media Metadata" style="color: linear-gradient(to right, #8fcfe5 , #149dcc);">
+                <md-content class="md-padding">
+                    <md-card>
+                        <md-card-header>
+                            <md-card-header-text>
+                                <span class="md-title">{{ctrl.getTitle()}}</span>
+                                <span class="md-subhead">{{ctrl.mm.guid}}</span>
+                                <span class="md-subhead">{{ctrl.mm.pubDate}}</span>
+                                <span class="md-subhead">{{ctrl.mm.genre}} - {{ctrl.mm.rating_type}} - {{ctrl.mm.rating}}</span>
+                            </md-card-header-text>
+                        </md-card-header>
+                        <md-card-content>
+                            <p class="md-body-1">{{ctrl.mm.short_description}}</p>
+                            <p class="md-caption">{{ctrl.mm.description}}</p>
+                            <md-divider></md-divider>
+                            <p class="md-body-2">{{ctrl.mm.channel_title}}</p>
+                            <p class="md-caption">{{ctrl.mm.channel_link}}</p>
+                            <p class="md-caption">{{ctrl.mm.channel_copyright}}</p>
+                            <p class="md-caption">{{ctrl.mm.license}}</p>
+                            <p class="md-caption">{{ctrl.mm.restriction}}</p>
+                        </md-card-content>
+                    </md-card>
+                </md-content>
+            </md-tab>
+            <md-tab label="Enrichment" ng-click="ctrl.getEpisodeEnrichment()">
+                <watson-metadata-viewer watson-metadata="ctrl.episode.full_enrichment"></watson-metadata-viewer>
+            </md-tab>
+        </md-tabs>
+    </div>
+    <div layout="row" class="demo-dialog-button">
+        <md-button md-autofocus flex class="md-primary" ng-click="ctrl.closeDialog()"> Close </md-button>
+    </div>
+</div>
