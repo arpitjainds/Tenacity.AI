@@ -1,5 +1,9 @@
 # Tenacity.AI
 
+## WATCH THE VIDEO<br>
+
+[![](main.jpg)](https://vimeo.com/259363004)
+
 Requires Node.js , Bower, CloudFoundry CLI, IBM Cloud Account. 
 
 ### DESIGNED BY
@@ -17,6 +21,4 @@ Requires Node.js , Bower, CloudFoundry CLI, IBM Cloud Account.
 
 >- Open http://localhost:6007/ or http://multimediaanalyser.eu-gb.mybluemix.net/ and enter the following, username: gautam password: gautams<BR><BR>
 
-### WATCH THE VIDEO<br>
 
-[![](main.jpg)](https://vimeo.com/259363004)
