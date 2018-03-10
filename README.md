@@ -1,6 +1,6 @@
 # Tenacity.AI
 
-Requires Node.js , Bower, CloudDoundry CLI, IBM Cloud Account. 
+Requires Node.js , Bower, CloudFoundry CLI, IBM Cloud Account. 
 
 ### DESIGNED BY
 
