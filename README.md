@@ -1,13 +1,11 @@
-# Tenacity.AI
+[![](main.jpg)](https://vimeo.com/259363004)
 
-Requires Node.js , Bower, CloudFoundry CLI, IBM Cloud Account. 
+CLick on the Picture for the video.
 
 ### DESIGNED BY
 
 >- Arpit Jain<BR>
 >- Gautam Yadav<BR>
->- Harsh Agarwal<BR>
->- Bhupendra Singh<BR>
 
 ### TO USE
   
