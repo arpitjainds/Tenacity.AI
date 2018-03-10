@@ -19,6 +19,4 @@ Requires Node.js , Bower, CloudFoundry CLI, IBM Cloud Account.
 
 ### VIEW DEMO VIDEO<br>
 
-![Demo](main.jpg)
-
 [![demo](main.jpg)](https://vimeo.com/259363004)
