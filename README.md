@@ -17,6 +17,6 @@ Requires Node.js , Bower, CloudFoundry CLI, IBM Cloud Account.
 
 >- Open http://localhost:6007/ or http://multimediaanalyser.eu-gb.mybluemix.net/ and enter the following, username: gautam password: gautams<BR><BR>
 
-### VIEW DEMO VIDEO<br>
+### WATCH THE VIDEO<br>
 
-[![demo](main.jpg)](https://vimeo.com/259363004)
+[![](main.jpg)](https://vimeo.com/259363004)
